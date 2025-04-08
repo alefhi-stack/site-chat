@@ -1,0 +1,360 @@
+Last login: Wed Mar 26 15:58:55 on console
+sachadellacherie@S-MacBook-Air-3 ~ % 
+sachadellacherie@S-MacBook-Air-3 ~ % /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+==> Checking for `sudo` access (which may request your password)...
+Password:
+==> You are using macOS 12.0.
+==> We (and Apple) do not provide support for this old version.
+This installation may not succeed.
+After installation, you will encounter build failures with some formulae.
+Please create pull requests instead of asking for help on Homebrew's GitHub,
+Twitter or any other official channels. You are responsible for resolving any
+issues you experience while you are running this old version.
+
+==> This script will install:
+/opt/homebrew/bin/brew
+/opt/homebrew/share/doc/homebrew
+/opt/homebrew/share/man/man1/brew.1
+/opt/homebrew/share/zsh/site-functions/_brew
+/opt/homebrew/etc/bash_completion.d/brew
+/opt/homebrew
+==> The following new directories will be created:
+/opt/homebrew/bin
+/opt/homebrew/etc
+/opt/homebrew/include
+/opt/homebrew/lib
+/opt/homebrew/sbin
+/opt/homebrew/share
+/opt/homebrew/var
+/opt/homebrew/opt
+/opt/homebrew/share/zsh
+/opt/homebrew/share/zsh/site-functions
+/opt/homebrew/var/homebrew
+/opt/homebrew/var/homebrew/linked
+/opt/homebrew/Cellar
+/opt/homebrew/Caskroom
+/opt/homebrew/Frameworks
+
+Press RETURN/ENTER to continue or any other key to abort:
+==> /usr/bin/sudo /usr/bin/install -d -o root -g wheel -m 0755 /opt/homebrew
+==> /usr/bin/sudo /bin/mkdir -p /opt/homebrew/bin /opt/homebrew/etc /opt/homebrew/include /opt/homebrew/lib /opt/homebrew/sbin /opt/homebrew/share /opt/homebrew/var /opt/homebrew/opt /opt/homebrew/share/zsh /opt/homebrew/share/zsh/site-functions /opt/homebrew/var/homebrew /opt/homebrew/var/homebrew/linked /opt/homebrew/Cellar /opt/homebrew/Caskroom /opt/homebrew/Frameworks
+==> /usr/bin/sudo /bin/chmod ug=rwx /opt/homebrew/bin /opt/homebrew/etc /opt/homebrew/include /opt/homebrew/lib /opt/homebrew/sbin /opt/homebrew/share /opt/homebrew/var /opt/homebrew/opt /opt/homebrew/share/zsh /opt/homebrew/share/zsh/site-functions /opt/homebrew/var/homebrew /opt/homebrew/var/homebrew/linked /opt/homebrew/Cellar /opt/homebrew/Caskroom /opt/homebrew/Frameworks
+==> /usr/bin/sudo /bin/chmod go-w /opt/homebrew/share/zsh /opt/homebrew/share/zsh/site-functions
+==> /usr/bin/sudo /usr/sbin/chown sachadellacherie /opt/homebrew/bin /opt/homebrew/etc /opt/homebrew/include /opt/homebrew/lib /opt/homebrew/sbin /opt/homebrew/share /opt/homebrew/var /opt/homebrew/opt /opt/homebrew/share/zsh /opt/homebrew/share/zsh/site-functions /opt/homebrew/var/homebrew /opt/homebrew/var/homebrew/linked /opt/homebrew/Cellar /opt/homebrew/Caskroom /opt/homebrew/Frameworks
+==> /usr/bin/sudo /usr/bin/chgrp admin /opt/homebrew/bin /opt/homebrew/etc /opt/homebrew/include /opt/homebrew/lib /opt/homebrew/sbin /opt/homebrew/share /opt/homebrew/var /opt/homebrew/opt /opt/homebrew/share/zsh /opt/homebrew/share/zsh/site-functions /opt/homebrew/var/homebrew /opt/homebrew/var/homebrew/linked /opt/homebrew/Cellar /opt/homebrew/Caskroom /opt/homebrew/Frameworks
+==> /usr/bin/sudo /usr/sbin/chown -R sachadellacherie:admin /opt/homebrew
+==> /usr/bin/sudo /bin/mkdir -p /Users/sachadellacherie/Library/Caches/Homebrew
+==> /usr/bin/sudo /bin/chmod g+rwx /Users/sachadellacherie/Library/Caches/Homebrew
+==> /usr/bin/sudo /usr/sbin/chown -R sachadellacherie /Users/sachadellacherie/Library/Caches/Homebrew
+==> Downloading and installing Homebrew...
+remote: Enumerating objects: 298640, done.
+remote: Counting objects: 100% (370/370), done.
+remote: Compressing objects: 100% (195/195), done.
+remote: Total 298640 (delta 262), reused 224 (delta 175), pack-reused 298270 (from 4)
+remote: Enumerating objects: 55, done.
+remote: Counting objects: 100% (33/33), done.
+remote: Total 55 (delta 33), reused 33 (delta 33), pack-reused 22 (from 1)
+==> Updating Homebrew...
+==> Downloading https://ghcr.io/v2/homebrew/portable-ruby/portable-ruby/blobs/sha256:d9faa506c014dedc0b034a68103ba75c9a58242f4d6c67b6ca0f649c39602bcf
+######################################################################### 100.0%
+==> Pouring portable-ruby-3.3.7.arm64_big_sur.bottle.tar.gz
+Warning: /opt/homebrew/bin is not in your PATH.
+  Instructions on how to configure your shell for Homebrew
+  can be found in the 'Next steps' section below.
+==> Installation successful!
+
+==> Homebrew has enabled anonymous aggregate formulae and cask analytics.
+Read the analytics documentation (and how to opt-out) here:
+  https://docs.brew.sh/Analytics
+No analytics data has been sent yet (nor will any be during this install run).
+
+==> Homebrew is run entirely by unpaid volunteers. Please consider donating:
+  https://github.com/Homebrew/brew#donations
+
+==> Next steps:
+- Run these commands in your terminal to add Homebrew to your PATH:
+    echo >> /Users/sachadellacherie/.zprofile
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/sachadellacherie/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+- Run brew help to get started
+- Further documentation:
+    https://docs.brew.sh
+
+sachadellacherie@S-MacBook-Air-3 ~ % echo >> ~/.zprofile
+
+sachadellacherie@S-MacBook-Air-3 ~ % echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+
+sachadellacherie@S-MacBook-Air-3 ~ % eval "$(/opt/homebrew/bin/brew shellenv)"
+
+sachadellacherie@S-MacBook-Air-3 ~ % brew --version
+
+Homebrew 4.4.29
+sachadellacherie@S-MacBook-Air-3 ~ % brew install git
+
+Warning: You are using macOS 12.
+We (and Apple) do not provide support for this old version.
+
+This is a Tier 3 configuration:
+  https://docs.brew.sh/Support-Tiers#tier-3
+Do not report any issues to Homebrew/* repositories!
+Read the above document instead before opening any issues or PRs.
+
+==> Fetching dependencies for git: libunistring, gettext and pcre2
+==> Fetching libunistring
+==> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/4983acd
+######################################################################### 100.0%
+==> Downloading https://ftp.gnu.org/gnu/libunistring/libunistring-1.3.tar.gz
+######################################################################### 100.0%
+==> Fetching gettext
+==> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/4983acd
+######################################################################### 100.0%
+==> Downloading https://ftp.gnu.org/gnu/gettext/gettext-0.24.tar.gz
+######################################################################### 100.0%
+==> Fetching pcre2
+==> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/4983acd
+######################################################################### 100.0%
+==> Downloading https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10
+==> Downloading from https://objects.githubusercontent.com/github-production-rel
+######################################################################### 100.0%
+==> Fetching git
+==> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/4983acd
+######################################################################### 100.0%
+==> Downloading https://mirrors.edge.kernel.org/pub/software/scm/git/git-htmldoc
+######################################################################### 100.0%
+==> Downloading https://mirrors.edge.kernel.org/pub/software/scm/git/git-manpage
+######################################################################### 100.0%
+==> Downloading https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Net-SMTP-SSL-1.04
+######################################################################### 100.0%
+==> Downloading https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.49.0.
+######################################################################### 100.0%
+Warning: A newer Command Line Tools release is available.
+Update them from Software Update in System Preferences.
+
+If that doesn't show you any updates, run:
+  sudo rm -rf /Library/Developer/CommandLineTools
+  sudo xcode-select --install
+
+Alternatively, manually download them from:
+  https://developer.apple.com/download/all/.
+You should download the Command Line Tools for Xcode 14.2.
+
+
+This is a Tier 2 configuration:
+  https://docs.brew.sh/Support-Tiers#tier-2
+Do not report any issues to Homebrew/* repositories!
+Read the above document instead before opening any issues or PRs.
+
+==> Installing dependencies for git: libunistring, gettext and pcre2
+==> Installing git dependency: libunistring
+Warning: A newer Command Line Tools release is available.
+Update them from Software Update in System Preferences.
+
+If that doesn't show you any updates, run:
+  sudo rm -rf /Library/Developer/CommandLineTools
+  sudo xcode-select --install
+
+Alternatively, manually download them from:
+  https://developer.apple.com/download/all/.
+You should download the Command Line Tools for Xcode 14.2.
+
+
+This is a Tier 2 configuration:
+  https://docs.brew.sh/Support-Tiers#tier-2
+Do not report any issues to Homebrew/* repositories!
+Read the above document instead before opening any issues or PRs.
+
+==> ./configure --disable-silent-rules
+==> make
+==> make check
+==> make install
+==> Downloading https://formulae.brew.sh/api/formula.jws.json
+🍺  /opt/homebrew/Cellar/libunistring/1.3: 59 files, 5.4MB, built in 10 minutes 44 seconds
+==> Installing git dependency: gettext
+Warning: A newer Command Line Tools release is available.
+Update them from Software Update in System Preferences.
+
+If that doesn't show you any updates, run:
+  sudo rm -rf /Library/Developer/CommandLineTools
+  sudo xcode-select --install
+
+Alternatively, manually download them from:
+  https://developer.apple.com/download/all/.
+You should download the Command Line Tools for Xcode 14.2.
+
+
+This is a Tier 2 configuration:
+  https://docs.brew.sh/Support-Tiers#tier-2
+Do not report any issues to Homebrew/* repositories!
+Read the above document instead before opening any issues or PRs.
+
+==> ./configure --with-libunistring-prefix=/opt/homebrew/opt/libunistring --disa
+==> make
+==> make install
+🍺  /opt/homebrew/Cellar/gettext/0.24: 2,189 files, 19.6MB, built in 8 minutes 23 seconds
+==> Installing git dependency: pcre2
+Warning: A newer Command Line Tools release is available.
+Update them from Software Update in System Preferences.
+
+If that doesn't show you any updates, run:
+  sudo rm -rf /Library/Developer/CommandLineTools
+  sudo xcode-select --install
+
+Alternatively, manually download them from:
+  https://developer.apple.com/download/all/.
+You should download the Command Line Tools for Xcode 14.2.
+
+
+This is a Tier 2 configuration:
+  https://docs.brew.sh/Support-Tiers#tier-2
+Do not report any issues to Homebrew/* repositories!
+Read the above document instead before opening any issues or PRs.
+
+==> ./configure --enable-pcre2-16 --enable-pcre2-32 --enable-pcre2grep-libz --en
+==> make
+==> make install
+==> Downloading https://formulae.brew.sh/api/formula.jws.json
+🍺  /opt/homebrew/Cellar/pcre2/10.45: 242 files, 6.7MB, built in 37 seconds
+==> Installing git
+==> make install prefix=/opt/homebrew/Cellar/git/2.49.0 sysconfdir=/opt/homebrew
+==> make CC=clang CFLAGS= LDFLAGS=
+==> make clean
+==> make
+==> make test
+==> make CC=clang CFLAGS= LDFLAGS=
+==> Caveats
+The Tcl/Tk GUIs (e.g. gitk, git-gui) are now in the `git-gui` formula.
+Subversion interoperability (git-svn) is now in the `git-svn` formula.
+
+zsh completions and functions have been installed to:
+  /opt/homebrew/share/zsh/site-functions
+==> Summary
+🍺  /opt/homebrew/Cellar/git/2.49.0: 1,730 files, 55.2MB, built in 43 seconds
+==> Running `brew cleanup git`...
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+Removing: /Users/sachadellacherie/Library/Caches/Homebrew/git--Net::SMTP::SSL--1.04.tar.gz... (2.4KB)
+==> Caveats
+==> git
+The Tcl/Tk GUIs (e.g. gitk, git-gui) are now in the `git-gui` formula.
+Subversion interoperability (git-svn) is now in the `git-svn` formula.
+
+zsh completions and functions have been installed to:
+  /opt/homebrew/share/zsh/site-functions
+sachadellacherie@S-MacBook-Air-3 ~ % git --version
+
+git version 2.32.1 (Apple Git-133)
+sachadellacherie@S-MacBook-Air-3 ~ % cd /chemin/vers/site-chat
+git init
+git add .
+git commit -m "Initial commit"
+
+cd: no such file or directory: /chemin/vers/site-chat
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /Users/sachadellacherie/.git/
+warning: could not open directory 'Library/Application Support/CallHistoryTransactions/': Operation not permitted
+warning: could not open directory 'Library/Application Support/CloudDocs/session/db/': Operation not permitted
+warning: could not open directory 'Library/Application Support/com.apple.sharedfilelist/': Operation not permitted
+warning: could not open directory 'Library/Application Support/Knowledge/': Operation not permitted
+warning: could not open directory 'Library/Application Support/com.apple.TCC/': Operation not permitted
+warning: could not open directory 'Library/Application Support/FileProvider/': Operation not permitted
+warning: could not open directory 'Library/Application Support/com.apple.avfoundation/Frecents/': Operation not permitted
+warning: could not open directory 'Library/Application Support/CallHistoryDB/': Operation not permitted
+warning: could not open directory 'Library/Assistant/SiriVocabulary/': Operation not permitted
+warning: could not open directory 'Library/Autosave Information/': Operation not permitted
+warning: could not open directory 'Library/IdentityServices/': Operation not permitted
+warning: could not open directory 'Library/Messages/': Operation not permitted
+warning: could not open directory 'Library/HomeKit/': Operation not permitted
+warning: could not open directory 'Library/Sharing/': Operation not permitted
+warning: could not open directory 'Library/Mail/': Operation not permitted
+warning: could not open directory 'Library/Accounts/': Operation not permitted
+warning: could not open directory 'Library/Safari/': Operation not permitted
+warning: could not open directory 'Library/Biome/': Operation not permitted
+warning: could not open directory 'Library/Shortcuts/': Operation not permitted
+warning: could not open directory 'Library/Suggestions/': Operation not permitted
+warning: could not open directory 'Library/Group Containers/group.com.apple.secure-control-center-preferences/': Operation not permitted
+warning: could not open directory 'Library/Group Containers/group.com.apple.notes/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.archiveutility/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.Safari/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.CloudDocs.MobileDocumentsFileProvider/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.mail/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.Notes/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.corerecents.recentsd/Data/Library/Recents/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.stocks/': Operation not permitted
+warning: could not open directory 'Library/PersonalizationPortrait/': Operation not permitted
+warning: could not open directory 'Library/Metadata/CoreSpotlight/': Operation not permitted
+warning: could not open directory 'Library/Metadata/com.apple.IntelligentSuggestions/': Operation not permitted
+warning: could not open directory 'Library/Cookies/': Operation not permitted
+warning: could not open directory 'Library/CoreFollowUp/': Operation not permitted
+warning: could not open directory 'Library/StatusKit/': Operation not permitted
+warning: could not open directory 'Library/Caches/com.apple.HomeKit/': Operation not permitted
+warning: could not open directory 'Library/Caches/CloudKit/': Operation not permitted
+warning: could not open directory 'Library/Caches/com.apple.Safari/': Operation not permitted
+warning: could not open directory 'Library/Caches/com.apple.findmy.fmfcore/': Operation not permitted
+warning: could not open directory 'Library/Caches/FamilyCircle/': Operation not permitted
+warning: could not open directory 'Library/Caches/com.apple.homed/': Operation not permitted
+warning: could not open directory 'Library/Caches/com.apple.findmy.fmipcore/': Operation not permitted
+warning: could not open directory 'Library/Caches/com.apple.ap.adprivacyd/': Operation not permitted
+warning: could not open directory '.Trash/': Operation not permitted
+warning: CRLF will be replaced by LF in .vscode/extensions/ms-toolsai.jupyter-2025.1.0-darwin-arm64/dist/node_modules/@aminya/node-gyp-build/LICENSE.
+The file will have its original line endings in your working directory
+warning: CRLF will be replaced by LF in .vscode/extensions/ms-toolsai.jupyter-2025.1.0-darwin-arm64/dist/node_modules/@aminya/node-gyp-build/README.md.
+The file will have its original line endings in your working directory
+fatal: unable to stat 'Library/Application Support/Google/Chrome/Default/Local Extension Settings/nkbihfbeogaeaoehlefnkodbefgpgknn/042145.log': No such file or directory
+warning: could not open directory '.Trash/': Operation not permitted
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.CFUserTextEncoding
+	.DS_Store
+	.anydesk/
+	.idlerc/
+	.ipython/
+	.ssh/
+	.vscode/
+	.wdm/
+	.zprofile
+	.zprofile.pysave
+	.zsh_history
+	.zsh_sessions/
+	Applications/
+	Desktop/
+	Documents/
+	Downloads/
+	Google Drive
+	Library/
+	Movies/
+	Music/
+	Pictures/
+	Public/
+	Ticket orchestre symphonique ghilbi.pdf
+	VIA/
+	billet ghilbi orchestre symphonique.pdf
+	linkedin_data.json
+	linkedin_scraper.py
+	linkedin_scraper.py    
+	mySESAME_Convocation_352693
+	scrap
+	scrap link
+	test 4
+	test-1.py
+	test.py
+	testtest
+
+nothing added to commit but untracked files present (use "git add" to track)
+sachadellacherie@S-MacBook-Air-3 ~ % cd ~/Documents
+
+sachadellacherie@S-MacBook-Air-3 Documents % cd hudson-index.html
+cd: not a directory: hudson-index.html
+sachadellacherie@S-MacBook-Air-3 Documents % 
